@@ -28,10 +28,10 @@ class Search(WebDriverHelper):
             pytest.fail("unable to search", ex)
 
     def search_product_name(self):
-        search_product_name = "//div[contains(text(),'SAMSUNG Galaxy F41 (Fusion Black, 128 GB)')]"
+        search_product_name = "//div[contains(text(),'SAMSUNG Galaxy F12 (Sky Blue, 64 GB)')]"
 
         try:
-            self.Search_button = self.find_element  ('xpath', search_product_name, 10)
+            self.Search_button = self.find_element  ('xpath', search_product_name, 40)
             # self.move_to_element(self.Search_button)
             self.Search_button.click()
 
