@@ -20,7 +20,7 @@ class Search(WebDriverHelper):
         try:
             self.Close = self.find_element('xpath', close_button, 10)
             self.Close.click()
-            self.Search = self.find_element('xpath', search_xpath, 10)
+            self.Search = self.find_element('xpath', search_xpath, 20)
             self.Search.send_keys(search)
             self.Search.send_keys(Keys.ENTER)
 
@@ -31,7 +31,7 @@ class Search(WebDriverHelper):
         search_product_name = "//div[contains(text(),'SAMSUNG Galaxy F12 (Sea Green, 128 GB)')]"
 
         try:
-            self.Search_button = self.find_element  ('xpath', search_product_name, 40)
+            self.Search_button = self.find_element  ('xpath', search_product_name, 50)
             # self.move_to_element(self.Search_button)
             self.Search_button.click()
 
